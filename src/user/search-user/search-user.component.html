@@ -1,1 +1,14 @@
-<p>search-user works!</p>
+<form #formdata="ngForm" (ngSubmit)="obj.searchUser(formdata)">
+    <label for="id">Enter Id:</label>
+    <select name="userId" id="id" ngModel>
+        <option *ngFor="let item of obj.userData" value="{{item.userId}}">{{item.userId}}</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit" value="Search">
+</form>
+<br>
+<h4>{{obj.searchUserData.userId}}</h4>
+<h4>{{obj.searchUserData.userName}}</h4>
+<h4>{{obj.searchUserData.userPassword}}</h4>
+

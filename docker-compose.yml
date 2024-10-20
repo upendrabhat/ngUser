@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pacote:
+    image: pacote
+    build:
+      context: node_modules/pacote
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production

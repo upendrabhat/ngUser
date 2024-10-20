@@ -1,1 +1,13 @@
-<p>add-user works!</p>
+<h1>Add user</h1>
+<form #formdata="ngForm" (ngSubmit)="obj.addUser(formdata)">
+    <label for="userId">User Id:</label>
+    <input type="number" name="userId" ngModel>
+    <br>
+    <label for="userName">User Name:</label>
+    <input type="text" name="userName" ngModel>
+    <br>
+    <label for="userPassword">User Password:</label>
+    <input type="text" name="userPassword" ngModel>
+    <br>
+    <input type="submit" value="Add">
+</form>
