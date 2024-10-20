@@ -1,0 +1,10 @@
+<div class="fade-in">
+    <h1>All users</h1>
+    <table>
+        <tr *ngFor="let udata of obj.userData">
+            <td>{{udata.userId}}</td>
+            <td>{{udata.userName}}</td>
+            <td>{{udata.userPassword}}</td>
+        </tr>
+    </table>
+</div>

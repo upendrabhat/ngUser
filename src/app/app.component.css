@@ -1,0 +1,17 @@
+.header{
+    background-color: #8aa5e2;
+    color:#3759d5;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px;
+    font-family:cursive;
+}
+
+h1 a{
+    font-size: 0.8em;
+}
+
+nav a{
+    font-size: 1.1em;
+}

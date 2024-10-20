@@ -1,0 +1,6 @@
+<form (ngSubmit)="obj.deleteUser(deleteUserForm)" #deleteUserForm="ngForm">
+    <label for="id">User ID</label>
+    <input type="number" name="id" ngModel>
+    <br>
+    <button type="submit">Delete</button>
+</form>
